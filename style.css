@@ -1,0 +1,73 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+.sidebar {
+    width:max(20%,100px);
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    height:100vh;
+    background-color:royalblue;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboardtitle {
+    display:flex;
+    gap:12px;
+    margin: 20px 0px;
+    align-items:center;
+    font-size:x-large;
+    font-weight: bolder;
+}
+
+
+img {
+    filter:invert();
+}
+
+.dashboardtitle>img {
+    height:4rem;
+    width:auto;
+    margin-left:12px;
+    
+}
+
+
+.dashbutton {
+    display:flex;
+    gap:12px;
+    justify-content:flex-start;
+    align-items:center;
+
+}
+
+.dashboardbuttons1 {
+    display:grid;
+    grid-template-rows: repeat(6, 1fr);
+    margin: 10vh 0px;
+}
+
+.dashboardbuttons2 {
+    display:grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.dashlabel {
+    font-size:large;
+    font-weight:bold;
+    text-align: left;
+
+}
+
+.dashbutton>img {
+    height:3rem;
+    width:auto;
+    margin-left:24px;
+    margin-right:12px;
+    padding:0.1rem;
+
+}
+
