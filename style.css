@@ -9,7 +9,7 @@ body {
     flex-direction:column;
     justify-content:flex-start;
     height:100vh;
-    width:20vw;
+    width:clamp(250px, 20vw, 20vw);
     background-color:royalblue;
     color:white;
     position:fixed;
@@ -76,7 +76,7 @@ body {
 
 .main {
     width:80vw;
-    margin-left:20vw;
+    margin-left:clamp(250px, 20vw, 20vw);
     display:grid;
     grid-template-rows: 5rem 8rem 1fr;
     gap:4px;
@@ -145,12 +145,13 @@ body {
     background-color:lightgray;
     display:grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2.5rem 1fr 2.5rem 1fr;
+    padding-right:20px;
 }
 
 .projects {
     display:grid;
-    grid-row: 1 / span 2;
+    grid-row: 2 / span 3;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 
@@ -200,6 +201,41 @@ body {
 
 .project>.text {
     font-weight:lighter;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    align-self:center;
+    margin-left: 16px;
+}
+
+.lorem {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.announcements {
+    border-radius: 1rem;
+    background-color: white;
+    padding:24px;
+    box-shadow: 4px 4px 4px gray;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.announcement {
+    display:flex;
+    flex-direction: column;
+    max-height: 8vh;
+    
+}
+
+.announcement>.title {
+    font-weight: bold;
 }
 
 
