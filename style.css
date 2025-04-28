@@ -1,17 +1,19 @@
 body {
     margin:0;
     padding:0;
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .sidebar {
-    width:max(20%,100px);
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
     height:100vh;
     background-color:royalblue;
     color:white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .dashboardtitle {
@@ -24,15 +26,14 @@ body {
 }
 
 
-img {
-    filter:invert();
-}
+
+    
 
 .dashboardtitle>img {
     height:4rem;
     width:auto;
     margin-left:12px;
-    
+    filter:invert();
 }
 
 
@@ -68,6 +69,34 @@ img {
     margin-left:24px;
     margin-right:12px;
     padding:0.1rem;
+    filter:invert();
 
 }
 
+
+.main {
+    display:grid;
+    grid-template-rows: 5rem 8rem 1fr;
+}
+
+.search {
+    display:grid;
+    grid-template-columns: 2rem 1fr 2rem 3rem 15%;
+    gap:12px;
+    margin-top:1.5rem;
+    align-items:center;
+    margin-left: 1rem;
+}
+
+
+.searchbar {
+    height: 1.5rem;
+    background-color: lightgray;
+    border-radius: 1rem;
+
+}
+
+
+.username {
+    font-weight: bold;
+}
